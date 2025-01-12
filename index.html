@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<style>
+    
+
+  
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeStudio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5 bg-black">
+        <div class="flex justify-between">
+            <a href="#" class="flex items-center p-2 mr-4 no-underline">
+                <img class="max-h-l2 w-auto" src="images/logo.png" />
+            </a>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+            <a href="#home" class="fs-s1 mx-3 py-3 no-underline hover-underline">Home</a>
+            <a href="#channels" id="channelsButton" class="fs-s1 mx-3 py-3 no-underline hover-underline">Channels</a>
+            <a href="#gallery" id="galleryButton" class="fs-s1 mx-3 py-3 no-underline hover-underline">Gallery</a>
+            <a href="#bot" id="botButton" class="fs-s1 mx-3 py-3 no-underline hover-underline">Bot</a>
+            <a href="credits.html" id="botButton" class="fs-s1 mx-3 py-3 no-underline hover-underline">Credits</a>
+            <a href="https://discord.gg/ES2rr3XMyS" class="button">Discord</a>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5">
+            <div class="inline-block br-round bg-blue-30 indigo-lightest p-2 fs-s2 mb-5">
+                <div class="inline-block bg-blue indigo-lightest br-round px-3 py-1 mr-3 fs-s3">Join Meet Up</div>
+                We are coming to your mom dresser. Learn more…
+            </div>
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">Improve Your <br><span id="span1">Anime</span> Art</h1>
+
+                <div class="br-8 mt-10 inline-flex">
+            
+                    <a href="https://discord.gg/ES2rr3XMyS">
+                        
+                    <button
+                        class="glow-on-hover  bg-indigo-lightest-20   fw-300 fs-s3 mr-0 br-xl-0">Get
+                        Started
+                    </button>
+                
+                </a>
+                </div>
+                
+
+                <div class="white opacity-20 fs-s3 mt-3">No credit card required</span>
+            </div>
+        </div>
+    </section>
+   
+    <!-- channels -->
+    <section id="channels" class="p-10 md-p-l5">
+        <h3 class="white fs-l2 md-fs-l5 fw-900 lh-2 mt-10 mb-l10 " style="text-align: center;">
+            Check Our Channels
+        </h3>
+        <div class="slider">
+            <div class="slides">
+                <section class="slide">
+                <div class="flex flex-column md-flex-row mx-auto">
+                    <div class="w-100pc md-w-40pc">
+                        <div class="br-8 p-5 m-5">
+                            <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img
+                                    src="images/2dart.png" class="w-l5"></img></div>
+                            <h4 class="white fw-600 fs-m3 mb-5">2d Art</h4>
+                            <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">Explore the world of 2D artistry! Share your digital or traditional drawings, paintings, illustrations, and sketches. Get inspired by fellow artists and showcase your creations.</div>
+                            </div>
+                    </div>
+                    <div class="w-100pc md-w-40pc">
+                        <div class="br-8 p-5 m-5">
+                            <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img
+                                    src="images/3dart.jpg" class="w-l5"></img></div>
+                            <h4 class="white fw-600 fs-m3 mb-5">3d Art</h4>
+                            <div class="indigo-lightest fw-600 fs-m1 opacity-50">Dive into the realm of 3D art! Share your sculptures, models, animations, and digital renderings. Exchange tips, techniques, and resources with other 3D artists.</div>
+                            </div>
+                    </div>
+                    <div class="w-100pc md-w-40pc">
+                        <div class="br-8 p-5 m-5">
+                            <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img
+                                    src="images/t&f.jpg" class="w-l5"></img></div>
+                            <h4 class="white fw-600 fs-m3 mb-5">Tips and Feedback</h4>
+                            <div class="indigo-lightest fw-600 fs-m1 opacity-50">Improve your artistic skills with tips and feedback from the community! Share your artworks and receive constructive criticism, suggestions, and advice to refine your technique and enhance your creations.</div>
+                            </div>
+                    </div>
+                </div>
+                </section>
+                <section class="slide">
+                <div class="flex flex-column md-flex-row mx-auto">
+                    <div class="w-100pc md-w-40pc">
+                        <div class="br-8 p-5 m-5">
+                            <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img
+                                    src="images/animation.gif" class="w-l5"></img></div>
+                            <h4 class="white fw-600 fs-m3 mb-5">Animation</h4>
+                            <div class="indigo-lightest fw-600 fs-m1 lh-3 opacity-50">Animate your imagination! Share your animated artworks, motion graphics, and short films. Discuss animation techniques, software tools, and storytelling principles with fellow animators.</div>
+                            </div>
+                    </div>
+                    <div class="w-100pc md-w-40pc">
+                        <div class="br-8 p-5 m-5">
+                            <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img
+                                    src="images/doodle.png" class="w-l5"></img></div>
+                            <h4 class="white fw-600 fs-m3 mb-5">Doodle</h4>
+                            <div class="indigo-lightest fw-600 fs-m1 opacity-50">The Doodle Channel is a creative platform where people share their sketches and doodles. It's a vibrant community for artists of all levels to showcase their artwork, find inspiration, and connect with others who share a passion for drawing.</div>
+                            </div>
+                    </div>
+                    <div class="w-100pc md-w-40pc">
+                        <div class="br-8 p-5 m-5">
+                            <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img
+                                    src="images/wip.png" class="w-l5"></img></div>
+                            <h4 class="white fw-600 fs-m3 mb-5">WIP</h4>
+                            <div class="indigo-lightest fw-600 fs-m1 opacity-50">Show us your work in progress! Share unfinished artwork, sketches, and drafts to get feedback, suggestions, and encouragement from the community as you develop your ideas into finished pieces.</div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+    </section>
+
+    <!-- winner gallery -->
+    <section id="gallery" class="relative bg-indigo-lightest-10 p-10">
+        <h3 class="white fs-l2 md-fs-xl1 fw-900 lh-2 ">
+            Winners Gallery
+        </h3>
+        <div class="indigo-lightest fw-600 fs-m1 opacity-50 p-10">Each month, we held a competition to see who are the best artis. The Strongest Wins.</div>
+        <section class="py-l10">
+            <div class="flex flex-column md-flex-row md-w-100pc mx-auto">
+                <div class="w-100pc md-w-50pc">
+                    <div class="hover br-8 p-5 m-5 pointer hover-scale-up-1 opacity-30 ease-300 bg-image-1">
+                        <div class="hover-content">
+                        <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4">
+                            @pequin</div>
+                        <div class=" indigo-lightest fw-600 fs-m1 mb-l3">
+                            Winner of August 2024 competition</span> </div>
+                        <a href="#" class=" mt-10 button bg-black fs-s3 white no-underline" style="visibility: hidden;">More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="w-100pc md-w-50pc">
+                    <div class="hover br-8 p-5 m-5 pointer hover-scale-up-1 hover-opacity-100 opacity-30 ease-300 bg-image-2">
+                        <div class="hover-content">
+                        <div class=" inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                            @四。</div>
+                        <div class=" indigo-lightest fw-600 fs-m1 mb-l3">
+                            Winner of July art competion 2024</span> </div>
+                        <a href="https://www.instagram.com/_prawndumpling_?igsh=MWl4Y29qZ2NjeTA1Nw==" class=" mt-10 button bg-black fs-s3 white no-underline">More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="w-100pc md-w-50pc">
+                    <div class="hover br-8 p-5 m-5 pointer hover-scale-up-1 hover-opacity-100 opacity-30 ease-300 bg-image-3">
+                        <div class="hover-content">
+                        <div class=" inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 ">
+                            @Yoru Torao</div>
+                        <div class=" indigo-lightest fw-600 fs-m1 mb-l3">
+                            Winner of September art competion 2024</span> </div>
+                        <a href="https://www.instagram.com/yoru_torao_/" class=" mt-10 button bg-black fs-s3 white no-underline">More</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-column md-flex-row md-w-100 mx-auto">
+                <div class="w-100pc md-w-50pc">
+                    <div class="hover br-8 p-5 m-5 pointer hover-scale-up-1 opacity-30 ease-300 bg-image-4">
+                        <div class="hover-content">
+                        <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4">
+                            @XiaoXunEr</div>
+                            <div class=" indigo-lightest fw-600 fs-m1 mb-l3">Winners of DTIYS event on June 1st 2024 </div>
+                        <a href="#" class="mt-10 button bg-black fs-s3 white no-underline" style="visibility: hidden;">More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="w-100pc md-w-50pc">
+                    <div class="hover br-8 p-5 m-5 pointer hover-scale-up-1 opacity-30 ease-300 bg-image-5">
+                        <div class="hover-content">
+                        <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                            @ran</div>
+                        <div class="indigo-lightest fw-600 fs-m1 mb-l2">Winner? I am always the winner!! Im Better!! RAAAAAAHHHHHHHHH!! </div>
+                        <a href="https://www.instagram.com/ran._.arts/" class="mt-10 button bg-black fs-s3 white no-underline">More</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="w-100pc md-w-50pc">
+                    <div class="hover br-8 p-5 m-5 pointer hover-scale-up-1 opacity-30 ease-300 bg-image-6">
+                        <div class="hover-content">
+                            <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4">
+                            @SarutobiMarcell</div>
+                        <div class=" indigo-lightest fw-600 fs-m1 mb-l3">
+                            Winner of June art competition 2024. </div>
+                            <a href="#" class="mt-10 button bg-black fs-s3 white no-underline" style="visibility: hidden;">More</a>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- big text -->
+    <section id="bot" class="p-10 md-py-10">
+        <div class="w-100pc md-w-70pc mx-auto py-10">
+            <h2 class="white fs-l2 md-fs-xl1 fw-900 lh-2">
+                Play around with our special made, <span class="border-b bc-indigo bw-4"> bots</span> to improve your skills,
+                </h2>
+        </div>
+    </section>
+
+    <!-- bot options -->
+    <section class="py-l10">
+        <div class="flex flex-column md-flex-row md-w-80pc mx-auto">
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10 pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Drawing Master</div>
+                    <div>
+                        <img src="images/drawingmaster.jpg" class="w-l5"></img>
+                    </div>
+                    <div class="indigo-lightest fw-600 fs-m1 mt-10">Drawing Master <span class="opacity-30"> is an innovative bot designed to assist artists of all levels in enhancing their artistic skills and embracing new creative challenges. Whether you're a beginner looking to learn the basics or an experienced artist seeking fresh inspiration, Drawing Master has something for everyone.</span> </div>
+                    <!--<a href="#" class="mt-10 button bg-black fs-s3 white no-underline">Read</a>-->
+                </div>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="br-8 p-5 m-5 bg-indigo-lightest-10  pointer hover-scale-up-1 ease-300">
+                    <div class="inline-block bg-indigo indigo-lightest br-3 px-4 py-1 mb-10 fs-s4 uppercase">
+                        Hisaki</div>
+                        <div>
+                            <img src="images/2dart.png" class="w-l5"></img>
+                        </div>
+                    <div class="indigo-lightest fw-600 fs-m1 mt-10">Hisaki <span class="opacity-30"> is a versatile custom bot designed to enhance your server experience by offering a range of assistance features along with exciting art challenges for users. Whether you're managing a community, coordinating activities, or looking to inspire creativity, Hisaki is here to help./span> </div>
+                    <!--<a href="#" class="mt-10 button bg-black fs-s3 white no-underline">Read</a>-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing -->
+    
+
+    <section id="pricing">
+        <div class="p-10 flex flex-wrap">
+            <div class="w-100pc md-w-50pc">
+                <div class="p-5">
+                    <h4 class="white fw-800 fs-l3 mb-5">Academy</h4>
+                    <div class="indigo-lightest fw-600 fs-m1 opacity-50">Join our art academy where we will teach you
+                        to draw from scratch. You dont have to worry about the pricing,<br>
+                        BECAUSE ITS FREE!!                <br>
+                        <br>
+                        Get in touch with our best teachers and schedule a time with them to have a live lessons.<br>
+                        Various of free art resources and daily lessons will be provided for you in specific channels.
+
+                    </div>
+                    
+                    <h4 class="white fw-600 fs-m2 mt-10">Join Us Now!</h4>
+                    
+                </div>
+            </div>
+            <div class="w-100pc md-w-25pc" style="visibility: hidden;">
+                <div class="m-3 p-5 br-8 bg-indigo-lightest-10 overflow-hidden">
+                    <div class="p-3">
+                        <h3 class="indigo">Free</h3>
+                        <div class="white flex items-center">$<span class="fs-l5 lh-1">0</span>/mo</div>
+                    </div>
+                    <div class="p-3 indigo-lightest fw-400 fs-s1 lh-5">
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">1 user</span>
+                        </div>
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">free resources</span></div>
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">daily lessons</span></div>
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">24x7 support</span></div>
+                        <div>
+                            <i class="h-3" stroke-width="4" data-feather="x"></i>
+                            <span class="opacity-50">third party integration</span></div>
+                    </div>
+                    <div class="p-3">
+                        <button class="button full bg-black white  hover-opacity-100 hover-scale-up-1 ease-300">SIGN
+                            UP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="academy-signup w-100pc md-w-25pc">
+                <div class="m-3 p-5 br-8 overflow-hidden">
+                    <div class="p-3">
+                        <h3 class="indigo">Free</h3>
+                        <div class="white flex items-center">$<span class="fs-l5 lh-1">0</span>/mo</div>
+                    </div>
+                    <div class="p-3 indigo-lightest fw-400 fs-s1 lh-5">
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">1 user</span>
+                        </div>
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">100+ free resources</span></div>
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">daily lessons</span></div>
+                        <div>
+                            <i class="h-3 indigo" stroke-width="4" data-feather="check"></i>
+                            <span class="opacity-50">24x7 support</span></div>
+                        <div>
+                            <i class="h-3" stroke-width="4" data-feather="x"></i>
+                            <span class="opacity-50">third party integration</span></div>
+                    </div>
+                    <div class="p-3">
+                        <a href="https://discord.gg/ES2rr3XMyS">
+                            <button class="button full bg-black white  hover-opacity-100 hover-scale-up-1 ease-300">OPT
+                            IN</button>
+                        </a>             
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- testimonials -->
+    <!--
+    <section class="p-10 md-p-l5">
+        <div id="slider-2">
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Mahnaz Farzin</div>
+                            <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Mahnaz Farzin</div>
+                            <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Mahnaz Farzin</div>
+                            <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/men/46.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Mahnaz Farzin</div>
+                            <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+-->
+   
+
+   
+    <!-- subscribe -->
+    <section class="p-10 md-p-l5">
+        <div class="cta-image br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center">
+            <div class="cta-content w-100pc md-w-33pc">
+                <h2 class="white fs-m4 fw-800">Like What We Do!?</h2>
+                <p class="fw-600 indigo-lightest opacity-40">Support us to improve the server.<br> All the donation will be use to fund the server.</p>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="flex my-5">
+                    <input type="text"
+                        class="input-lg flex-grow-1 bw-0 fw-200 bg-red-lightest-10 red ph-red-lightest focus-red opacity-80 fs-s3 py-5 br-r-0">
+                        <a href="https://ko-fi.com/animestudiodiscord">
+                    <button class="button-lg bg-indigo indigo-lightest fw-300 fs-s3 br-l-0">Donate Now</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-logo-container bg-indigo-lightest-10">
+        <img src="images/logo.png" class="footer-logo">
+        <p style="color: grey;">&copy; 2024 AnimeStudio. All Rights Reserved.</p>
+    </footer>
+   
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

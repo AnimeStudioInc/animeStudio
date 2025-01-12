@@ -1,0 +1,282 @@
+
+#span1{
+    color: #5865F2;
+}
+
+body{
+    background-image: url(images/bar1.png);
+    background-repeat: no-repeat;
+    background-position-y: 80px;
+    background-size: cover;
+    height: 500px;
+}
+
+/* Get Started Button */
+.glow-on-hover {
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+} 
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.w-l5{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#nav-items a{
+    color: orange;
+    text-shadow: 0 0 1em currentColor, 0 0 0.25em yellow;
+}
+
+#nav-items .button {
+font-weight: 600;
+background-color: orange; /* Change the color as needed */
+color: white; /* Change the color as needed */
+text-decoration: none;
+margin: 0 0.5rem;
+padding: 0.75rem 1rem;
+box-shadow: 0 0 1em orange, 0 0 0.25em yellow;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider section{
+    width: 100%;
+    display: none;
+}
+.slides{
+    position: relative;
+    width: 95%;
+    transform: translateX(3%);
+}
+section.displaySlide{
+    display: block;
+    animation-name: slideLeft;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 6%, 18%, 0.379);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
+}
+@keyframes slideLeft {
+    from{transform: translateX(100px);}
+}
+.bg-image-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url(images/winner6.png);
+}
+.bg-image-2 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/winner5.png);
+}
+.bg-image-3 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/winner7.jpg);
+}
+.bg-image-4 {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(images/winner3.png);
+}
+.bg-image-5 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/winner2.jpeg);
+}
+.bg-image-6 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/winner4.jpg);
+}
+
+.cta-image {
+position: relative; /* Make the wrapper a positioning context */
+border-radius: 50;
+}
+
+.cta-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/cta.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 30%; /* Adjust the opacity as needed */
+    z-index: -1; /* Send the background image behind the content */
+    border-radius: 0.15cm;
+}
+
+.cta-image .cta-content,
+.cta-image .flex {
+    position: relative;
+    z-index: 1; /* Ensure content stays above the background image */
+}
+
+.hover:hover {
+    opacity: 100%;
+}
+
+.hover-content {
+    visibility: hidden;
+    
+}
+
+.hover:hover .hover-content {
+    visibility: visible;
+}
+
+.footer-logo-container {
+text-align: center; /* Center the logo horizontally */
+padding: 20px; /* Add some padding around the logo */
+}
+
+.footer-logo {
+width: auto; /* Maintain the aspect ratio */
+max-width: 200px; /* Set a maximum width */
+height: auto; /* Maintain the aspect ratio */
+max-height: 60px; /* Set a maximum height */
+}
+
+@media (max-width: 600px) {
+.footer-logo {
+    max-width: 150px; /* Adjust max width for smaller screens */
+    max-height: 50px; /* Adjust max height for smaller screens */
+}
+}
+
+@media (min-width: 1200px) {
+.footer-logo {
+    max-width: 150px; /* Adjust max width for larger screens */
+    max-height: 80px; /* Adjust max height for larger screens */
+}
+}
+
+/* Acdemy SignUp */
+.academy-signup {
+  --border-width: 1px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #222;
+  border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 10px;
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
